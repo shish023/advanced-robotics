@@ -24,14 +24,10 @@ Code to get the Creative Senz3D camera working and display the 3D input in the f
 * Enter `sudo ./DepthSenseSDK-1.4.5-2151-amd64-deb.run`
 
 For Ubuntu 14.04 perform the following steps:
-* Change directory
-`cd /opt/softkinetic/DepthSenseSDK/samples/ConsoleDemo`
-* Find Errors
-`ldd /opt/softkinetic/DepthSenseSDK/bin/Plugins/libDefaultEnumeratorImpl.so`
-* Fix missing files
-`sudo ln -s /lib/x86_64-linux-gnu/libudev.so.1 /lib/libudev.so.0`
-* Export path
-`export LD_LIBRARY_PATH=/opt/softkinetic/DepthSenseSDK/lib/`
+* `cd /opt/softkinetic/DepthSenseSDK/samples/ConsoleDemo`
+* `ldd /opt/softkinetic/DepthSenseSDK/bin/Plugins/libDefaultEnumeratorImpl.so`
+* `sudo ln -s /lib/x86_64-linux-gnu/libudev.so.1 /lib/libudev.so.0`
+* `export LD_LIBRARY_PATH=/opt/softkinetic/DepthSenseSDK/lib/`
 
 
 ## Run
